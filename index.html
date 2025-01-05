@@ -1,0 +1,105 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя Визитка</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .card {
+            width: 400px;
+            height: 600px;
+            background-color: white;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+            border-radius: 16px;
+            overflow: hidden;
+            display: grid;
+            grid-template-rows: 200px auto;
+        }
+        
+        .header {
+            background-image: url('https://api.eric.s3storage.ru/super-static/prod/63887aa5dfe70f4470c858b3-1900x.jpeg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border: 6px solid white;
+            border-radius: 50%;
+            position: absolute;
+            bottom: -60px;
+            left: calc(50% - 60px);
+            background-image: url('https://sun1-24.userapi.com/impg/Yh2gSjiYj3GmPPUKevQG6Lu9XuamDjL2ooSigA/pyxZtDbwEws.jpg?size=1200x800&quality=96&sign=6b9dad7c7f880d378ade30f2558bed61&c_uniq_tag=RHUSP4OYkhfTGU4J5IxkR6kp0PxaYxx8GMQvu2vkFYY&type=album');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .content {
+            padding: 32px;
+            text-align: center;
+        }
+        
+        h1 {
+            color: #333;
+            font-weight: bold;
+            font-size: 24px;
+            margin-bottom: 12px;
+        }
+        
+        p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 24px;
+        }
+        
+        ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-top: 48px;
+        }
+        
+        li a {
+            color: #007bff;
+            text-decoration: none;
+            transition: all 0.3s ease-in-out;
+        }
+        
+        li a:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+    <div class="header"></div>
+    <div class="content">
+        <img src="https://sun9-20.userapi.com/impf/c629129/v629129717/1f718/KsCMhPiSAII.jpg?size=1105x1280&quality=96&sign=829c2e52886bb53059d1383de2808414&type=album" alt="Avatar" class="avatar">
+        <h1>Владислав Борисов</h1>
+        <p>Приветствую вас на моей визитке! Я QA Engineer.</p>
+        <ul>
+            <li><a href="#">Портфолио</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Обо мне</a></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
